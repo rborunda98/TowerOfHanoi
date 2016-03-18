@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=numOfDisks
+comment0.target=int\ TowerSetup(int)
+comment1.params=element
+comment1.target=int\ moveLeftOne(int)
+comment2.params=element
+comment2.target=int\ moveLeftTwo(int)
+comment3.params=element
+comment3.target=int\ moveRightOne(int)
+comment4.params=element
+comment4.target=int\ moveRightTwo(int)
+numComments=5
