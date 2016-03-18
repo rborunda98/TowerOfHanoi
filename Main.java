@@ -52,6 +52,10 @@ public class Main
             scanner.next();
 
         }
+        else if(move.equals("")!=("right")){
+
+        }
+
     }
 }
 
