@@ -59,6 +59,7 @@ public class Tower
             counter ++;
             position = 1;
         }
+        System.out.println(position);
         return position;
     }
 
@@ -77,6 +78,7 @@ public class Tower
             position = 1;
 
         }
+        System.out.println(position);
         return position;
     }
 
@@ -94,10 +96,11 @@ public class Tower
         else if (position == 3){
             System.out.println("You can't move right.");
         }
+        System.out.println(position);
         return position;
     }
 
-    public  int moveRightTwo(int element){
+    public int moveRightTwo(int element){
         if(position == 1){
             peg3.set(element,element);
             counter++;
@@ -110,7 +113,7 @@ public class Tower
         else if (position == 3){
             System.out.println("You can't move right.");
         }
+        System.out.println(position);
         return position;
-
     }
 }

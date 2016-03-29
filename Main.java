@@ -19,42 +19,40 @@ public class Main
         //         String left2 = scanner.next();
         //         String right1= scanner.next();
         //         String right2= scanner.next();
-
-        if(move.equals("left")){
-            tower.moveLeftOne(5);
-            System.out.println(tower.peg1);
-            if(tower.position == 2){
+        int positron = 0;
+        while(positron == 0){
+            if(move.equals("left")){
+                tower.moveLeftOne(5);
+                if(tower.position == 2){
+                    System.out.println(tower.peg1);
+                }
+                if(tower.position == 3){
+                    System.out.println(tower.peg2);
+                }
+                scanner.next();
+            }
+            else if(move.equals("lefttwo")){
+                tower.moveLeftTwo(5);
                 System.out.println(tower.peg1);
+                scanner.next();
             }
-            if(tower.position == 3){
-                System.out.println(tower.peg2);
+            else if(move.equals("right")){
+                tower.moveRightOne(5);
+                if(tower.position == 1){
+                    System.out.println(tower.peg2);
+                }
+                if(tower.position == 2){
+                    System.out.println(tower.peg3);
+                }
+                scanner.next();
             }
-            scanner.next();
-        }
-        else if(move.equals("lefttwo")){
-            tower.moveLeftOne(5);
-            System.out.println(tower.peg1);
-            scanner.next();
-        }
-        else if(move.equals("right")){
-            tower.moveRightOne(5);
-            if(tower.position == 1){
-                System.out.println(tower.peg2);
-            }
-            if(tower.position == 2){
+            else if(move.equals("righttwo")){
+                tower.moveRightTwo(5);
                 System.out.println(tower.peg3);
+                scanner.next();
             }
-            scanner.next();
         }
-        else if(move.equals("righttwo")){
-            tower.moveRightTwo(5);
-            System.out.println(tower.peg3);
-            scanner.next();
 
-        }
-        else if(move.equals("")!=("right")){
-
-        }
 
     }
 }
