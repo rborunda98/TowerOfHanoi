@@ -55,7 +55,7 @@ public class Tower
 
         }
         else if (position ==2){
-            peg3.set(element,element);
+            peg1.set(element,element);
             counter ++;
             position = 1;
         }
